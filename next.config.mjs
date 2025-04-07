@@ -13,6 +13,11 @@ const nextConfig = {
   trailingSlash: true,
   // Ensure proper asset prefix
   assetPrefix: process.env.NODE_ENV === 'production' ? '/trello-assignment/' : '',
+  // Add proper webpack configuration
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, path: false };
+    return config;
+  }
 };
 
 export default nextConfig; 
