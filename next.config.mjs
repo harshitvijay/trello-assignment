@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   // GitHub Pages configuration
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/assignment' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/trello-assignment' : '',
   // Disable image optimization since it's not supported in static exports
   images: {
     unoptimized: true,

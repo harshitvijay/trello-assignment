@@ -2,12 +2,12 @@
 
 A responsive, drag-and-drop task management application built with Next.js 15 and TypeScript.
 
-![Kanban Board Demo](https://github.com/harshitvijay/assignment/assets/xxxxx/gif-placeholder.png)
+![Kanban Board Demo](https://github.com/harshitvijay/trello-assignment/assets/xxxxx/gif-placeholder.png)
 
 ## 🔗 Links
 
-- [Live Demo (GitHub Pages)](https://harshitvijay.github.io/assignment/)
-- [GitHub Repository](https://github.com/harshitvijay/assignment)
+- [Live Demo (GitHub Pages)](https://harshitvijay.github.io/trello-assignment/)
+- [GitHub Repository](https://github.com/harshitvijay/trello-assignment)
 
 ## ✨ Features
 
@@ -29,8 +29,8 @@ A responsive, drag-and-drop task management application built with Next.js 15 an
 
 1. Clone the repository
 ```bash
-git clone https://github.com/harshitvijay/assignment.git
-cd assignment
+git clone https://github.com/harshitvijay/trello-assignment.git
+cd trello-assignment
 ```
 
 2. Install dependencies
