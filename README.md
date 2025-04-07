@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trello-Like Kanban Board
 
-## Getting Started
+A responsive, drag-and-drop task management application built with Next.js 15 and TypeScript.
 
-First, run the development server:
+![Kanban Board Demo](https://github.com/harshitvijay/trello-assignment/assets/xxxxx/gif-placeholder.png)
 
+## 🔗 Links
+
+- [Live Demo (GitHub Pages)](https://harshitvijay.github.io/trello-assignment/)
+- [GitHub Repository](https://github.com/harshitvijay/trello-assignment)
+
+## ✨ Features
+
+- Drag-and-drop task management across different lanes (Pending, In Progress, Completed)
+- Create, edit, and delete tasks
+- Persists state with API or fallback to local state if API is unavailable
+- Fully responsive design for all device sizes
+- Elegant UI with smooth animations
+- Error handling with toast notifications
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/harshitvijay/trello-assignment.git
+cd trello-assignment
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Design Decisions & Architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Code Structure & Design Patterns
 
-## Learn More
+- **Component-Based Architecture**: The application is built using reusable components (Board, Lane, TodoCard, AddTodoForm), making the codebase modular and maintainable.
+- **Service Layer Pattern**: API interactions are abstracted into a service layer (`todoService.ts`), keeping components focused on the UI.
+- **State Management**: Using React's useState and useEffect hooks for local state management.
+- **Typed Interfaces**: Strong TypeScript typing throughout the codebase to ensure type safety.
 
-To learn more about Next.js, take a look at the following resources:
+### Responsiveness and UI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Mobile-First Design**: The UI is designed to work on all screen sizes, prioritizing mobile experience.
+- **TailwindCSS**: Used for styling with consistent design tokens and responsive utilities.
+- **Drag and Drop**: Implemented using `@dnd-kit`, providing a smooth and accessible drag and drop experience.
+- **Visual Feedback**: Hover states, transitions, and toast notifications for a polished user experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Performance Optimization
 
-## Deploy on Vercel
+- **Lazy Loading**: Images and non-critical assets are lazy-loaded.
+- **Optimized Renders**: Components are structured to avoid unnecessary re-renders.
+- **Error Handling**: Robust error handling with fallback UI states and helpful error messages.
+- **Optimistic Updates**: UI updates immediately before API confirmation for a snappy experience.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Technical Implementation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: TailwindCSS 4
+- **Drag and Drop**: @dnd-kit/core and @dnd-kit/sortable
+- **Notifications**: react-hot-toast
+- **API Integration**: DummyJSON API with local fallbacks
+
+## 🚧 Limitations & Future Improvements
+
+- **Authentication**: Add user authentication and permission-based access.
+- **Persistence**: Implement a real backend or database for true persistence.
+- **Rich Text**: Add rich text editing for task descriptions.
+- **Due Dates and Reminders**: Implement task due dates and reminder notifications.
+- **Filtering and Sorting**: Add ability to filter and sort tasks by various criteria.
+- **Attachments**: Allow file attachments to tasks.
+- **Team Collaboration**: Add collaboration features like comments and assignments.
+
+## 📝 License
+
+MIT
